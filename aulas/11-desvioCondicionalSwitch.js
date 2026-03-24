@@ -10,7 +10,7 @@ let menuSelecionado = "1234";
 switch (menuSelecionado) {
   case "Home":
     console.log("Você clicou no link 'Home'");
-    break;
+    break;f
   case "ContatQuem somos":
     console.log("Você clicou no link 'Quem somos'");
     break;
