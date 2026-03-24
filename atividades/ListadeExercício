@@ -1,4 +1,39 @@
-var seuNOME = "Pedro";
-var suaIdade = "16anos"
-var  suaCidade = "Jáu";
-console.log(seuNome+suaIdade+suaCidade);
+var nome = "Pedro";
+var idade = 16;
+var cidade = "Jáu";
+
+console.log("Nome:", nome, "| Idade:", idade, "| Cidade:", cidade);
+console.log("------------------------------------")
+
+let x = 26;
+let y = 62;
+console.log("x =", x, "\ny =", y);
+
+let soma = x + y; 
+console.log("A soma de x + y é", soma); 
+
+let subtracao = x - y; 
+console.log("A subtração de x - y é", subtracao);
+
+let multiplicacao = x * y;
+console.log("A multiplicação de x * y é", multiplicacao);
+
+let divisao = x / y;
+console.log("A divisão de x / y é", divisao); 
+console.log("------------------------------------")
+
+ var base = 10;
+var altura = 5;
+
+var area = base * altura;
+
+console.log("Base:", base, "| Altura:", altura, "| Área:", area);
+console.log("------------------------------------")
+
+var comprimento = 10;
+var largura = 5;
+var altura = 3;
+
+var volume = comprimento * largura * altura;
+
+console.log("Comprimento:", comprimento, "| Largura:", largura, "| Altura:", altura, "| Volume:", volume);
