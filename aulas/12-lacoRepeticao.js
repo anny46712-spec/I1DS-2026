@@ -28,7 +28,7 @@ for (let i = 1; i <= 20; i++) {
 
 console.log("--------------------------------")
 // Dado um vetor, calcule e exiba o somatório de seus elementos
-var numeros = [ 5, 6, 8, 14, 0, 6, 9, 7, 2];
+let numeros = [ 5, 6, 8, 14, 0, 6, 9, 7, 2];
 let soma =
  0;
 

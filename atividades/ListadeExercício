@@ -1,0 +1,4 @@
+var seuNOME = "Pedro";
+var suaIdade = "16anos"
+var  suaCidade = "Jáu";
+console.log(seuNome+suaIdade+suaCidade);
