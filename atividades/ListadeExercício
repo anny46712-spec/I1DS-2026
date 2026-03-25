@@ -1,39 +1,126 @@
+//Crie variáveis para nome, idade e cidade. Exiba uma frase completa
 var nome = "Pedro";
 var idade = 16;
 var cidade = "Jáu";
 
 console.log("Nome:", nome, "| Idade:", idade, "| Cidade:", cidade);
-console.log("------------------------------------")
+console.log("------------------------------------");
 
+//Crie duas variáveis numéricas e exiba:soma,subtração,multiplicação, divisão e resto da divisão
 let x = 26;
 let y = 62;
 console.log("x =", x, "\ny =", y);
 
-let soma = x + y; 
-console.log("A soma de x + y é", soma); 
+let soma = x + y;
+console.log("A soma de x + y é", soma);
 
-let subtracao = x - y; 
+let subtracao = x - y;
 console.log("A subtração de x - y é", subtracao);
 
 let multiplicacao = x * y;
 console.log("A multiplicação de x * y é", multiplicacao);
 
 let divisao = x / y;
-console.log("A divisão de x / y é", divisao); 
-console.log("------------------------------------")
+console.log("A divisão de x / y é", divisao);
+console.log("------------------------------------");
 
- var base = 10;
-var altura = 5;
+//Calcule a área de um retângulo.
+var base = 10;
+var altura1 = 5;
 
-var area = base * altura;
+var area = base * altura1;
 
-console.log("Base:", base, "| Altura:", altura, "| Área:", area);
-console.log("------------------------------------")
+console.log("Base:", base, "| Altura:", altura1, "| Área:", area);
+console.log("------------------------------------");
 
+// Calcule o volume de um paralelepípedo.
 var comprimento = 10;
 var largura = 5;
-var altura = 3;
+var altura2 = 3;
 
-var volume = comprimento * largura * altura;
+var volume = comprimento * largura * altura2;
 
-console.log("Comprimento:", comprimento, "| Largura:", largura, "| Altura:", altura, "| Volume:", volume);
+console.log(
+  "Comprimento:",
+  comprimento,
+  "| Largura:",
+  largura,
+  "| Altura:",
+  altura2,
+  "| Volume:",
+  volume,
+);
+console.log("--------------------------------------");
+
+//Dado o valor de um produto, calcule: 10% de desconto | valor final
+let valor = 200;
+let desconto = valor * 0.1;
+let valorFinal = valor - desconto;
+
+console.log("Desconto:", desconto, "| Valor final:", valorFinal);
+console.log("--------------------------------------");
+
+//Converta temperatura de Celsius para Fahrenheit.
+let celsius = 22;
+let fahrenheit = (celsius * 9) / 5 + 32;
+console.log("Temperatura em Fahrenheit:", fahrenheit);
+console.log("--------------------------------------");
+
+// Calcule o IMC e exiba o valor.
+let altura3 = 1.75;
+let peso = 70;
+let imc = peso / (altura3 * altura3);
+console.log("Valor do imc:", imc);
+console.log("--------------------------------------");
+
+//Calcule a média de 3 notas.
+let nota1 = 7;
+let nota2 = 9;
+let nota3 = 6;
+let media = (nota1 + nota2 + nota3) / 3;
+console.log("a sua média final foi:", media);
+console.log("--------------------------------------");
+
+// Calcule o delta de uma equação de 2º grau.
+let a = 4;
+let b = 6;
+let c = 3;
+let delta = b * b - 4 * a * c;
+console.log("Delta =", delta);
+console.log("--------------------------------------");
+
+//Dado um valor em horas, converta para minutos e segundos.
+let horas = 2;
+let minutos = 2 * 60;
+let segundos = 2 * 3600;
+console.log("Minutos:", minutos);
+console.log("Segundos:", segundos);
+console.log("--------------------------------------");
+
+//PARTE 2
+let numero = 22;
+if (numero > 0) {
+  console.log("Positivo");
+} else if (numero < 0) {
+  console.log("Negativo");
+} else {
+  console.log("Zero");
+}
+console.log("--------------------------------------");
+
+// Verifique se um número é par ou ímpar.
+numero = 17
+if (numero % 2 === 0) {
+    console.log("Par");
+} else {
+    console.log("Ímpar");
+}
+console.log("--------------------------------------");
+
+numero = 12
+//Dado um número, verifique se é múltiplo de 3.
+if (numero % 3 === 0) {
+    console.log("É múltiplo de 3");
+} else {
+    console.log("Não é múltiplo de 3");
+}
