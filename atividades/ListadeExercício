@@ -24,7 +24,7 @@ let divisao = x / y;
 console.log("A divisão de x / y é", divisao);
 console.log("------------------------------------");
 
-//Calcule a área de um retângulo.
+//Calcule a área de um retângulo
 var base = 10;
 var altura1 = 5;
 
@@ -33,7 +33,7 @@ var area = base * altura1;
 console.log("Base:", base, "| Altura:", altura1, "| Área:", area);
 console.log("------------------------------------");
 
-// Calcule o volume de um paralelepípedo.
+//Calcule o volume de um paralelepípedo
 var comprimento = 10;
 var largura = 5;
 var altura2 = 3;
@@ -60,20 +60,20 @@ let valorFinal = valor - desconto;
 console.log("Desconto:", desconto, "| Valor final:", valorFinal);
 console.log("--------------------------------------");
 
-//Converta temperatura de Celsius para Fahrenheit.
+//Converta temperatura de Celsius para Fahrenheit
 let celsius = 22;
 let fahrenheit = (celsius * 9) / 5 + 32;
 console.log("Temperatura em Fahrenheit:", fahrenheit);
 console.log("--------------------------------------");
 
-// Calcule o IMC e exiba o valor.
+//Calcule o IMC e exiba o valor
 let altura3 = 1.75;
 let peso = 70;
 let imc = peso / (altura3 * altura3);
 console.log("Valor do imc:", imc);
 console.log("--------------------------------------");
 
-//Calcule a média de 3 notas.
+//Calcule a média de 3 notas
 let nota1 = 7;
 let nota2 = 9;
 let nota3 = 6;
@@ -81,7 +81,7 @@ let media = (nota1 + nota2 + nota3) / 3;
 console.log("a sua média final foi:", media);
 console.log("--------------------------------------");
 
-// Calcule o delta de uma equação de 2º grau.
+//Calcule o delta de uma equação de 2º grau
 let a = 4;
 let b = 6;
 let c = 3;
@@ -89,7 +89,7 @@ let delta = b * b - 4 * a * c;
 console.log("Delta =", delta);
 console.log("--------------------------------------");
 
-//Dado um valor em horas, converta para minutos e segundos.
+//Dado um valor em horas, converta para minutos e segundos
 let horas = 2;
 let minutos = 2 * 60;
 let segundos = 2 * 3600;
@@ -117,10 +117,201 @@ if (numero % 2 === 0) {
 }
 console.log("--------------------------------------");
 
+//Dado um número, verifique se é múltiplo de 3
 numero = 12
-//Dado um número, verifique se é múltiplo de 3.
 if (numero % 3 === 0) {
     console.log("É múltiplo de 3");
 } else {
     console.log("Não é múltiplo de 3");
 }
+console.log("--------------------------------------");
+
+ //Verifique se um aluno foi:aprovado, recuperação e reprovado
+function notaAluno(nota) {
+  if (nota < 5) return "Reprovado";
+  if (nota < 7) return "Recuperação";
+  if (nota <= 8) return "Aprovado";
+  return "Nota inválida";
+}
+let nota = 8;
+console.log("Você tirou", nota, "-", notaAluno(nota));
+console.log("--------------------------------------");
+
+//Verifique se uma pessoa pode votar (use regras reais)
+function podeVotar(idade) {
+  let resultado;
+  if (idade < 16) {
+    resultado = "Não pode votar";
+  } else if ((idade >= 16 && idade < 18) || idade >= 70) {
+    resultado = "Voto opcional";
+  } else if (idade >= 18) {
+    resultado = "Voto obrigatório";
+  }
+  return resultado;
+}
+let voto = podeVotar(4);
+console.log(voto);
+let voto2 = podeVotar(17);
+console.log(voto2);
+let voto3 = podeVotar(43);
+console.log(voto3);
+let voto4 = podeVotar(78);
+console.log(voto4);
+console.log("--------------------------------------");
+
+//Verifique se um número está entre 10 e 50
+function verificarNumero(num) {
+  if (num >= 10 && num <= 50) {
+    return "Está entre 10 e 50";
+  } else {
+    return "Não está entre 10 e 50";
+  }
+}
+console.log(verificarNumero(25)); // Está entre 10 e 50
+console.log(verificarNumero(8));  // Não está entre 10 e 50
+console.log("--------------------------------------");
+
+//Crie um sistema de login simples (usuário e senha)
+let usuario = "seu nome";
+let senha = "5678";
+
+function login(usuario, senha) {
+  const usuarioCorreto = "seu nome";
+  const senhaCorreta = "5678";
+
+  if (usuario === usuarioCorreto && senha === senhaCorreta) {
+    return "Login bem-sucedido!";
+  } else {
+    return "Usuário ou senha incorretos!";
+  }
+}
+
+console.log(login(usuario, senha));
+console.log("--------------------------------------");
+
+//Verifique o maior entre dois números
+function maiorNumero(x, y) {
+  if (x > y) return x;
+  if (y > x) return y;
+  return "Os dois números são iguais";
+}
+
+console.log(maiorNumero(12, 46));
+console.log("--------------------------------------");
+
+//Verifique o maior entre três números
+function maiorDeTres(a, b, c) {
+  if (a > b && a > c) return a;
+  if (b > a && b > c) return b;
+  if (c > a && c > b) return c;
+  return "Há números iguais";
+}
+console.log(maiorDeTres(76, 34, 22));
+console.log(maiorDeTres(45, 67, 87));
+console.log(maiorDeTres(93, 21, 12));
+console.log("--------------------------------------");
+
+//Classifique a idade: criança, adolescente, adulto e idoso
+function classificarIdade(idade) {
+  if (idade < 12) {
+    return "Criança";
+  } else if (idade < 18) {
+    return "Adolescente";
+  } else if (idade < 60) {
+    return "Adulto";
+  } else {
+    return "Idoso";
+  }
+}
+console.log(classificarIdade(8));   
+console.log(classificarIdade(17));  
+console.log(classificarIdade(47));  
+console.log(classificarIdade(80));  
+console.log("--------------------------------------");
+
+//Parte 3
+function diaDaSemana(numero) {
+  switch (numero) {
+    case 1:
+      return "Domingo";
+    case 2:
+      return "Segunda-feira";
+    case 3:
+      return "Terça-feira";
+    case 4:
+      return "Quarta-feira";
+    case 5:
+      return "Quinta-feira";
+    case 6:
+      return "Sexta-feira";
+    case 7:
+      return "Sábado";
+    default:
+      return "Número inválido";
+  }
+}
+console.log(diaDaSemana(1));
+console.log(diaDaSemana(6));
+console.log(diaDaSemana(3));
+console.log(diaDaSemana(5));
+console.log("--------------------------------------");
+
+//Dado um mês (1 a 12), exiba o nome do mês
+function nomeDoMes(numero) {
+  switch (numero) {
+    case 1:
+      return "Janeiro";
+    case 2:
+      return "Fevereiro";
+    case 3:
+      return "Março";
+    case 4:
+      return "Abril";
+    case 5:
+      return "Maio";
+    case 6:
+      return "Junho";
+    case 7:
+      return "Julho";
+    case 8:
+      return "Agosto";
+    case 9:
+      return "Setembro";
+    case 10:
+      return "Outubro";
+    case 11:
+      return "Novembro";
+    case 12:
+      return "Dezembro";
+    default:
+      return "Mês inválido";
+  }
+}
+console.log(nomeDoMes(4));
+console.log(nomeDoMes(8));
+console.log(nomeDoMes(3));
+console.log(nomeDoMes(79));
+console.log("--------------------------------------");
+
+//Dado um mês, informe o trimestre
+function trimestreDoMes(mes) {
+  if (mes >= 1 && mes <= 3) {
+    return "1º trimestre";
+  } else if (mes >= 4 && mes <= 6) {
+    return "2º trimestre";
+  } else if (mes >= 7 && mes <= 9) {
+    return "3º trimestre";
+  } else if (mes >= 10 && mes <= 12) {
+    return "4º trimestre";
+  } else {
+    return "Mês inválido";
+  }
+}
+console.log(trimestreDoMes(8));   
+console.log(trimestreDoMes(9));  
+console.log(trimestreDoMes(5));  
+console.log(trimestreDoMes(3));  
+console.log(trimestreDoMes(67));  
+console.log("--------------------------------------");
+
+//Crie um menu simples: somar, subtrair, multiplicar e dividir
