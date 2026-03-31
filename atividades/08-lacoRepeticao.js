@@ -27,3 +27,16 @@ let matriz = [
     [3, 7, 8],
 ];
 console.table(matriz);
+
+/*
+neste exemplo a posição do item 1,2 é 8 (primeiro número
+é a linha, eixo X, segundo número é a coluna, eixo Y)
+*/
+
+console.table(matriz);
+
+for (let linha = 0; linha < matriz.length; linha++) {
+for (let coluna = 0; coluna < matriz[0].length; coluna++) {
+console.log("Matriz[" + linha + ",", coluna + "] =", matriz[linha][coluna]);
+}
+}
