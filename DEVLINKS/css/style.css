@@ -1,0 +1,40 @@
+body{
+background-image: url(../img/bg-desktop.jpg);
+background-size: cover;
+color: rgb(255, 255, 255);
+
+text-align: center;
+
+font-family: Arial;
+
+padding: 10px;
+
+}
+
+img {
+
+border-radius: 50%;
+
+}
+
+a {
+
+display: block;
+
+margin: 1px auto;
+
+padding: 12px;
+
+width: 350px;
+
+border: 1px solid white;
+
+border-radius: 8px;
+
+text-decoration: none;
+
+color: white;
+
+}
+
+
