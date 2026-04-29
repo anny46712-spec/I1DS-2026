@@ -1,105 +1,118 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 14px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
-    background-color: #f4f6f9;
+
+body {
+  background-color: #f4f6f9;
 }
 
 /* LAYOUT */
-.container{
-    display: flex;
+.container {
+  display: flex;
 }
 
-/* SIDEBAR*/
+/* SIDEBAR */
 .sidebar {
-    width: 220px;
-    height: 100dvh;
-    background-color: #111827;
-    color: white;
-    padding: 20px;
-    position: fixed;
+  width: 220px;
+  height: 100dvh;
+  background-color: #111827;
+  color: white;
+  padding: 20px;
+  position: fixed;
 }
 
 .sidebar h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .sidebar a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 6px;
-    transition: 0.3s;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.3s;
 }
 
-.sidebar a:hover{
-    background-color: #2563eb;
+.sidebar a:hover {
+  background-color: #2563eb;
 }
 
 /* CONTEÚDO */
 .content {
-    margin-left: 220px;
-    padding: 20px;
-    width: 100%;
+  margin-left: 220px;
+  padding: 20px;
+  width: 100%;
 }
 
 /* HEADER */
-.topvar{
-    background-color: white;
-    padding: 12px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.topbar {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 /* CARD */
-.card{
-    background-color: white;
-    padding: 12px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 /* FORMULÁRIO */
-input{
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
-/* BOTAO */
-button{
-    background-color: #2563eb;
-    color: white;
-    padding: 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.3s;
-    border: none;
-    width: 100%;
-    margin-top: 10px;
+/* BOTÃO */
+button {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  margin-top: 10px;
 }
 button:hover {
-    background-color: #1d4ed8;
-    transform: scale(1.02);
+  background-color: #1d4ed8;
+  transform: scale(1.02);
 }
-/* LISTA */
-ul{
-    list-style: none;
+
+/* LISTA  */
+ul {
+  list-style: none;
 }
-li{
-    background-color: #f1f5f9;
-    padding: 10px;
-    margin-top: 8px;
-    border-radius: 6px;
-    transition: 0.5s;
+
+li {
+  background-color: #f1f5f9;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 6px;
+  transition: 0.5s;
 }
-li:hover{
-    background-color: #e2e8f0;
-    transform: translateX(5px);
+li:hover {
+  background-color: #e2e8f0;
+  transform: translateX(5px);
+}
+
+.btn {
+  color: #111827;
+  width: 50px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  display: inline;
 }
