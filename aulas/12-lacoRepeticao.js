@@ -39,3 +39,34 @@ let soma =
     soma += numeros[i];
 }
 console.log(soma);
+
+// laco de repeticao - while / Do while 
+// -------------------------------------
+// while testa a condicao antes de entrar no laco de repeticao
+// ASe a condicao for inicialmente falsa, o laco nao é executado nenhuma vez.
+var x = 10;
+
+while (x > 10) {
+    console.log("Entrei no laco while...");
+    x = 0;
+}
+console.log("Terminei!");
+
+// Somar enquanto (while) menor que 10
+var somar = 0; // variavel para armazenar a soma dos numeros
+var num = 0; // variavel para aumentar de 1 em 1
+
+while (soma < 10){
+    soma += num; // somo o numero atual com o que ja existe na variavel
+    num++;       // variavel de controle para o while funcionar
+    console.log('somando...' ,somar);
+    console.log('Numero...',num);
+}
+
+for (let i = 0; i < 10; i++) {  
+}
+
+var i = 0 
+ while (i < 10) {
+    i++
+}
