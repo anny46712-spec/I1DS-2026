@@ -109,12 +109,12 @@ const finalizarCompra = () => {
 
 //Aplicar Desconto
 const aplicarDesconto = () => {
-  let valorDesconto = Number(document.getElementById("descontoValor").value) || 0; // as duas pega o primeiro valor que for válido
+  let valorDesconto = Number(document.getElementById("descontoValor").value) || 0;
   let percentualDesconto = Number(document.getElementById("descontoPercentual").value) || 0;
 
   let total = totalGeral;
-  total = total - valorDesconto;
-  total = total * (percentualDesconto / 100);
+  total -= valorDesconto;
+  total -= total * (percentualDesconto / 100);
 
   if (total < 0) total = 0;
 
